@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实验一 HTML基本标签实验</title>
+</head>
+<body>
+<form action="/register" method="post">
+    <div>
+        个人信息
+        <br><br>
+        <!--<label></label>-->
+        <label>用户名：<input type="text" required></label>
+
+        <br><br>
+        <label>密码：<input type="password" required></label>
+
+        <br><br>
+        性别：<label><input type="radio" name="gender">男 </label>
+             <label><input type="radio" name="gender">女</label>
+
+        <br><br>
+
+        生日：<input type="date" name="birthday" required><br><br>
+        籍贯：<input list="province">
+        <datalist id="province">
+            <option>北京</option>
+            <option>上海</option>
+            <option>慈利</option>
+        </datalist>
+        <br><br>
+        学历：
+        <select name="graduation">
+            <option value="">请选择你的学历</option>
+            <option value="1">小学</option>
+            <option value="2">初中</option>
+            <option value="3">高中</option>
+            <option value="4">大学</option>
+            <option value="5">硕士</option>
+            <option value="6">博士</option>
+        </select>
+
+        其他信息
+        <br><br>
+        喜欢的课程：
+        <br><br>
+        <li><label><input type="checkbox" name="hobby" checked>web开发技术</label><br></li>
+        <li><label><input type="checkbox" name="hobby">java程序设计</label><br></li>
+        <li><label><input type="checkbox" name="hobby">数据库原理</label><br></li>
+        <li><label><input type="checkbox" name="hobby">系统分析与设计</label><br><br></li>
+
+        <label>照片：<input type="file" id="photo" accept=".jpg,.png"></label>
+
+
+    </div>
+
+    <button type="submit" >提交</button>
+    <br><br>
+    <button type="reset" >重置</button>
+
+
+</form>
+
+
+</body>
+</html>
